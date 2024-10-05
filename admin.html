@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель Администратора</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Панель Администратора</h1>
+
+        <div class="admin-actions">
+            <button id="edit-stock-prices">Изменить цены акций</button>
+            <button id="view-orders-btn">Показать ордеры</button>
+            <button id="view-info-btn">Общая информация</button>
+        </div>
+
+        <div id="stock-prices-form" style="display: none;">
+            <p>🔵 Цена синих акций: <input type="number" id="price-blue"></p>
+            <p>🟢 Цена зеленых акций: <input type="number" id="price-green"></p>
+            <p>🔴 Цена красных акций: <input type="number" id="price-red"></p>
+            <button id="update-prices">Обновить цены</button>
+        </div>
+
+        <h2>Управление персонажами и игроками</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Персонаж</th>
+                    <th>Игрок</th>
+                    <th>Имя для входа</th>
+                    <th>Установить</th>
+                </tr>
+            </thead>
+            <tbody id="player-list">
+                <!-- Игроки и персонажи будут загружены здесь -->
+            </tbody>
+        </table>
+
+        <h2>Свободные персонажи</h2>
+        <ul id="free-characters"></ul>
+
+        <h2>Управление ордерами</h2>
+        <div id="orders-list">
+            <!-- Список ордеров будет загружен здесь -->
+        </div>
+    </div>
+    <script src="js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рынок Акций</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Рынок Акций</h1>
+
+    <div id="market-info">
+        <!-- Цены на акции будут загружены здесь -->
+    </div>
+
+    <h2>Разместить ордер</h2>
+    <form id="order-form">
+        <label for="stock-color">Выберите цвет акций:</label>
+        <select id="stock-color">
+            <option value="blue">🔵 Синие</option>
+            <option value="green">🟢 Зеленые</option>
+            <option value="red">🔴 Красные</option>
+        </select>
+        <label for="stock-quantity">Количество акций:</label>
+        <input type="number" id="stock-quantity" min="1" required>
+        <button type="submit">Разместить ордер</button>
+    </form>
+
+    <h2>Ордеры на продажу</h2>
+    <div id="order-list">
+        <!-- Ордеры будут отображены здесь -->
+    </div>
+
+    <button id="back-btn">Вернуться к персонажу</button>
+
+    <script src="js/market.js"></script>
+</body>
+</html>
